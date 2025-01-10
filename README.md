@@ -73,3 +73,13 @@ Feel free to explore the different sections that document my learning in areas s
 - **Beginner Projects**
 - **Intermediate Projects**
 - **Final Projects**
+
+
+## Stay in Touch  
+Got questions or want to share your thoughts? Feel free to reach out anytime:  
+
+- **Email:** [muhamadrizkiaditya32@gmail.com](mailto:muhamadrizkiaditya32@gmail.com)  
+- **LinkedIn:** [Visit my LinkedIn profile](https://www.linkedin.com/in/muhamad-rizki-aditya-09a957209/)  
+
+Keep learning and never stop growing! 🚀  
+
