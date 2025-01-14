@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // without nullish coalesting operator
+      let parameter;
+
+      let data = parameter;
+
+      if (data === undefined || data === null) {
+        data = "Nilai default";
+      }
+
+      document.writeln(`<p>${data}</p>`);
+
+      data = parameter ?? "Nilai default";
+      document.writeln(`<p>${data}</p>`);
+    </script>
+  </body>
+</html>
