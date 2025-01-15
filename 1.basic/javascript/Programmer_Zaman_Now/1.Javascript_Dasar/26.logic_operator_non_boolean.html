@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // || OR
+      console.log("hello" || ""); // helo
+      console.log("" || []); // []
+      console.log("0" || "NOLL"); // "0"
+      console.log(null || "NULL"); // "Null"
+      console.log(undefined || "undefined"); // "undefined"
+      console.log(0 || false); // false
+
+      // example
+      const person = {
+        firstName: "Rizki",
+        lastName: "Aditya",
+      };
+
+      const name = person.firstName || person.lastName;
+      console.log(name);
+
+      console.log("&& AND");
+      console.log("HELLO" && ""); // ""
+      console.log("" && []); //  ""
+      console.log("0" && "NOLL"); // "NOL"
+      console.log(null && "NULL"); // null
+      console.log(undefined && "undefined"); // undefined
+      console.log(0 && false); // false
+    </script>
+  </body>
+</html>
