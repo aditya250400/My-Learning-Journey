@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Rizki",
+        address: "Bandung",
+        country: "Indonesia",
+      };
+
+      for (const propery in person) {
+        document.writeln(`<p>${propery} : ${person[propery]}</p>`);
+      }
+
+      const names = ["rinka", "muti", "yuuho"];
+      for (const index in names) {
+        document.write(`<p>${index} : ${names[index]}</p>`);
+      }
+    </script>
+  </body>
+</html>
