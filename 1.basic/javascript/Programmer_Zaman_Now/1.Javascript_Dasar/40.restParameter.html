@@ -12,8 +12,11 @@
         for (const item of data) {
           total += item;
         }
-        console.log(`Total ${name} is ${total}`);
+        document.writeln(`<p>Total ${name} is ${total}</p>`);
       }
+
+      sum("Orange", 10, 20, 30, 40, 50);
+      sum("banana", ...[20, 20, 20, 20, 20]);
     </script>
   </body>
 </html>
