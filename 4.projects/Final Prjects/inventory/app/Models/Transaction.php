@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\HasScope;
 
 class Transaction extends Model
 {
+    use HasScope;
+
     protected $fillable = ['user_id', 'invoice'];
 
     public function user()

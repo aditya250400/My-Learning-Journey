@@ -2,10 +2,15 @@
 
 namespace App\Models;
 
+use App\Traits\HasScope;
+use App\Traits\HasSlug;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    use HasSlug, HasScope;
+
     protected $fillable = [
         'category_id',
         'supplier_id',
@@ -16,6 +21,12 @@ class Product extends Model
         'image',
         'unit'
     ];
+    protected function image(): Attribute
+    {
+        return Attribute::make(
+            get: fn($image) => asset('storage/products/' . $image)
+        );
+    }
 
     public function category()
     {
