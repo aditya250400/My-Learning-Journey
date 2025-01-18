@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function* createNames() {
+        yield "Muhamad";
+        yield "Rizki";
+        yield "Aditya";
+      }
+
+      let names = createNames();
+      for (let name of names) {
+        console.log(name);
+      }
+
+      // lazy
+      function* buatGanjil(value) {
+        for (let i = 1; i < value; i++) {
+          if (i % 2 == 1) {
+            console.log(`yield ke ${i}`);
+            yield i;
+          }
+        }
+      }
+
+      // eager
+      function buatGanjilArray(value) {
+        const result = [];
+        for (let i = 1; i < value; i++) {
+          if (i % 2 == 1) {
+            console.log(`yield ke ${i}`);
+            result.push(i);
+          }
+        }
+        return result;
+      }
+
+      const numbers = buatGanjil(100);
+      numbers.next().value;
+      numbers.next().value;
+      numbers.next().value;
+      // for (number of numbers) {
+      // console.info(number);
+      // }
+    </script>
+  </body>
+</html>
