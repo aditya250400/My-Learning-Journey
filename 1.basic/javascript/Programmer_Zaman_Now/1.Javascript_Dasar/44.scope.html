@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // global scope
+      let counter = 0;
+
+      //globa scope
+      function hitMe() {
+        // loca scope hitMe
+        let firstVariable = "first";
+        counter++;
+      }
+
+      //global scope
+      function other() {
+        // local scope other
+        let secondVariable = "second";
+      }
+      hitMe();
+      hitMe();
+
+      console.log(counter);
+      console.log(firstVariable); //error
+      console.log(secondVariable); //error
+    </script>
+  </body>
+</html>
