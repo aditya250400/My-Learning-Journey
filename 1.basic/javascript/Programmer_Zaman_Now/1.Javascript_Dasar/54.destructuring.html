@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* const names = ["Muhamad", "rizki", "aditya", "rinka", "muti", "yuuho"];
+
+      const [firstName, middleName, lastName, ...others] = names;
+      console.log(firstName);
+      console.log(middleName);
+      console.log(lastName);
+      console.log(others); */
+
+      const person = {
+        firstName: "rizki",
+        lastName: "aditya",
+        address: {
+          street: "cibuntu",
+          city: "bandung",
+          country: "indonesia",
+        },
+        hobby: "game",
+        channel: "rikidev",
+      };
+
+      const {
+        firstName,
+        lastName,
+        address: { street, city, country },
+        ...others
+      } = person;
+      console.log(firstName);
+      console.log(lastName);
+      console.log(street);
+      console.log(city);
+      console.log(country);
+      console.log(others);
+
+      {
+        function displayPerson({ firstName, middleName, lastName }) {
+          console.log(firstName);
+          console.log(middleName);
+          console.log(lastName);
+        }
+
+        const person = {
+          firstName: "Muhamad",
+          middleName: "Rizki",
+          lastName: "aditya",
+        };
+
+        displayPerson(person);
+
+        function sum([first, second]) {
+          return first + second;
+        }
+
+        console.log(sum([20, 20]));
+        console.log(sum([20, 21]));
+      }
+
+      {
+        const names = ["rizki", "muhamad", "aditya"];
+        const [firstName, middleName = "rizki", lastName = "riki"] = names;
+
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+    </script>
+  </body>
+</html>
