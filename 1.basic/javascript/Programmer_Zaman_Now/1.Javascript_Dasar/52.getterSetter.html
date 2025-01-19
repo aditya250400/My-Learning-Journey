@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "rizki",
+        lastName: "Aditya",
+        // getter
+        get fullName() {
+          return `${this.firstName} ${this.lastName}`;
+        },
+        // setter
+        set fullName(value) {
+          array = value.split(" ");
+          this.firstName = array[0];
+          this.lastName = array[1];
+        },
+      };
+
+      person.fullName = "Riki Aditya";
+
+      const result = person.fullName;
+      console.log(result);
+    </script>
+  </body>
+</html>
