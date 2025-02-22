@@ -38,8 +38,9 @@ class AuthorResource extends Resource
     {
         return $table->query(Author::query()->latest())
             ->columns([
-                Tables\Columns\TextColumn::make('name')->searchable(),
                 Tables\Columns\ImageColumn::make('avatar'),
+                Tables\Columns\TextColumn::make('name')->searchable(),
+                Tables\Columns\TextColumn::make('occupation'),
             ])
             ->filters([
                 //
