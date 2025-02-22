@@ -13,11 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $faker = \Faker\Factory::create('id_ID');
+        $faker->seed(123);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        $this->call(CategorySeeder::class);
+        $this->call(AuthorSeeder::class);
+        $this->call(ArticleNewsSeeder::class);
     }
 }

@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->longText('content');
-            $table->string('thumbnail');
+            $table->longText('slug');
+            $table->string('thumbnail')->nullable();
             $table->enum('is_featured', ['featured', 'not_featured'])->default('not_featured');
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->foreignId('author_id')->constrained()->cascadeOnDelete();
