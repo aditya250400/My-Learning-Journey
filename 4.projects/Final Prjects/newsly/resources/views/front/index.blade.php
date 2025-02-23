@@ -60,7 +60,8 @@
                                 alt="{{ $article->category->name }}" />
                         </div>
                         <div class="card-info flex flex-col gap-[6px]">
-                            <h3 class="font-bold text-lg leading-[27px]">{{ $article->name }}</h3>
+                            <h3 class="font-bold text-lg leading-[27px]">{{ substr($article->name, 0, 50) }}
+                                {{ strlen($article->name) > 50 ? '...' : '' }}</h3>
                             <p class="text-sm leading-[21px] text-[#A3A6AE]">
                                 {{ $article->created_at->format('M d, Y') }}</p>
                         </div>
@@ -84,7 +85,7 @@
         <div class="grid grid-cols-6 gap-[30px]">
 
             @forelse ($authors as $author)
-                <a href="author.html" class="card-authors">
+                <a href="{{ route('front.author', $author->slug) }}" class="card-authors">
                     <div
                         class="rounded-[20px] border border-[#EEF0F7] p-[26px_20px] flex flex-col items-center gap-4 hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300">
                         <div class="w-[70px] h-[70px] flex shrink-0 rounded-full overflow-hidden">
