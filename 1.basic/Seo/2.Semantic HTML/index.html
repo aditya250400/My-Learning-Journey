@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Jasa pembuatan website terpercaya | AditWeb</title>
     <!--title kurleb 60 karakter -->
 
@@ -48,56 +47,181 @@
       hreflang="x-default"
       href="https://www.aditweb.com/index.html"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-
-    <header class=""">
-      <img src="" alt="">
+  <body class="bg-[##E8EEF9] font-['Poppins']">
+    <header
+      class="max-w-screen-xl mx-auto flex items-center justify-between mt-[44px]"
+    >
+      <img src="assests/logo.svg" alt="logo" />
       <nav>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+        <ul class="flex items-center gap-x-[60px] text-[17px]">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#layanan">Portfolio & Layanan</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1></h1>
-        <p></p>
-        <button></button>
+      <section
+        id="home"
+        class="max-w-screen-xl mt-[74px] mx-auto grid grid-cols-1 lg:flex items-center justify-between px-5 lg:px-0"
+      >
+        <div>
+          <h1 class="text-[32px] font-bold leading-10 text-[#373737]">
+            JASA PEMBUATAN WEBSITE MURAH, TERBAIK & TERPERCAYA - ADITWEB
+          </h1>
+          <p class="text-[22px] leading-[36px] text-[#5B5B5B]">
+            Kalian ingin membuat website murah cepat dan terpercaya? Percayakan
+            kepadan kami ADITWEB
+          </p>
+          <button
+            class="bg-[#7273F1] hover:cursor-pointer hover:bg-purple-900 transition-all ease-in-out duration-500 mt-[10px] text-white text-center rounded-xl p-[12px]"
+          >
+            Kontak Kami
+          </button>
+        </div>
+
+        <div>
+          <figure>
+            <img src="assests/hero.png" class="w-[1100px]" alt="hero" />
+          </figure>
+        </div>
       </section>
 
-      <section>
-        <section>
-          <h2></h2>
-          <img src="" alt="">
-        </section>
-        <section>
-          <h2></h2>
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </section>
+      <section class="bg-[#FAFAFA] pb-[66px]" id="layanan">
+        <div
+          class="max-w-screen-xl mt-[74px] mx-auto flex gap-x-[90px] items-start flex-wrap justify-center lg:justify-normal"
+        >
+          <section class="mt-[30px]">
+            <h2 class="text-[37px] text-center font-semibold text-[#373737]">
+              Portfolio
+            </h2>
+            <img
+              src="assests/portfolio.svg"
+              alt="portfolio"
+              class="w-[606px] mt-[30px]"
+            />
+          </section>
+          <section class="mt-[30px]">
+            <h2 class="text-[37px] text-center font-semibold text-[#373737]">
+              Jenis layanan
+            </h2>
+
+            <ol
+              class="flex flex-col gap-y-[12px] text-[#5B5B5B] font-semibold text-[22px] mt-[30px]"
+            >
+              <li class="flex items-center gap-x-2">
+                <p class="bg-[#D9D9D9] rounded-full px-3 w-fit">1</p>
+                <p>Website Profile Perusahaan</p>
+              </li>
+              <li class="flex items-center gap-x-2">
+                <p class="bg-[#D9D9D9] rounded-full px-3 w-fit">2</p>
+                <p>Toko Online</p>
+              </li>
+              <li class="flex items-center gap-x-2">
+                <p class="bg-[#D9D9D9] rounded-full px-3 w-fit">3</p>
+                <p>Sistem Informasi</p>
+              </li>
+              <li class="flex items-center gap-x-2">
+                <p class="bg-[#D9D9D9] rounded-full px-3 w-fit">4</p>
+                <p>Blog</p>
+              </li>
+              <li class="flex items-center gap-x-2">
+                <p class="bg-[#D9D9D9] rounded-full px-3 w-fit">5</p>
+                <p>Mobile Web</p>
+              </li>
+            </ol>
+          </section>
+        </div>
       </section>
 
-      <section>
-        <h2></h2>
-        <article></article>
-        <article></article>
-        <article></article>
-      </section>
+      <section class="max-w-screen-xl mx-auto mt-[58px]" id="testimoni">
+        <h2 class="text-center text-[37px] text-[#373737] font-semibold">
+          Testimoni
+        </h2>
 
+        <div
+          class="flex items-center flex-wrap justify-center mt-[17px] gap-x-[58px] gap-y-[20px] lg:gap-y-0"
+        >
+          <article class="rounded-xl bg-[#6072E221] w-[331px]">
+            <p
+              class="italic text-[#37474F] text-[16px] h-[144px] px-[22px] pt-[21px]"
+            >
+              "Pembuatan websitenya sesuai dengan harapan aya. Pengerjaan cepat"
+            </p>
+
+            <div
+              class="flex items-center gap-x-[10px] px-[22px] pt-[21px] mb-[30px]"
+            >
+              <img src="assests/person1.svg" alt="person1" />
+              <div>
+                <h3 class="text-[#37474F] text-[20px] font-bold">
+                  Benedikt Safiyulin
+                </h3>
+                <p>Belfast</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-xl bg-[#982BBE21] w-[331px]">
+            <p
+              class="italic text-[#37474F] text-[16px] h-[144px] px-[22px] pt-[21px]"
+            >
+              “Saya tidak salah untuk menggunakan jasa createweb. Pengerjaan
+              rapi, terstruktur dan seuai.”
+            </p>
+
+            <div
+              class="flex items-center gap-x-[10px] px-[22px] pt-[21px] mb-[30px]"
+            >
+              <img src="assests/person2.svg" alt="person2" />
+              <div>
+                <h3 class="text-[#37474F] text-[20px] font-bold">
+                  Jumaima Al Nourt
+                </h3>
+                <p>Dallas</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-xl bg-[#E2626221] w-[331px]">
+            <p
+              class="italic text-[#37474F] text-[16px] h-[144px] px-[22px] pt-[21px]"
+            >
+              “Saya tidak salah untuk menggunakan jasa createweb. Pengerjaan
+              rapi, terstruktur dan seuai.”
+            </p>
+
+            <div
+              class="flex items-center gap-x-[10px] px-[22px] pt-[21px] mb-[30px]"
+            >
+              <img src="assests/person3.svg" alt="person3" />
+              <div>
+                <h3 class="text-[#37474F] text-[20px] font-bold">
+                  Nerte Gronw
+                </h3>
+                <p>Lisbon</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-    
-    <footer>
-      <img src="" alt="">
-      <p></p>
+
+    <footer class="max-w-screen-xl mt-[82px] mx-auto mb-[80px]">
+      <hr class="text-[#BCD0E57F]" />
+      <div class="flex items-center justify-between mt-[20px]">
+        <img src="assests/logo.svg" alt="logo" />
+        <p class="text-[#5B5B5B] text-[22px]">Copyright © 2022 aditweb.com</p>
+      </div>
     </footer>
   </body>
 </html>
